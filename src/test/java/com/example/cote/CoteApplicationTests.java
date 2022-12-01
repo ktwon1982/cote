@@ -15,31 +15,31 @@ class CoteApplicationTests {
     void contextLoads() {
 
 
-        Integer[] arr = new Integer[]{1, 26, 17, 25, 99, 44, 303};
-
-        Arrays.sort(arr, Collections.reverseOrder());
-
-        System.out.println("Sorted arr[] : " + Arrays.toString(arr));
-
-//        int n = 23;
-//        String n_ = String.valueOf(n);
-//        System.out.println(n_);
+//        Integer[] arr = new Integer[]{1, 26, 17, 25, 99, 44, 303};
 //
-//        for(int i=0;i<n_.length();i++) {
-//            int num = n_.charAt(i)-'0';
-//            System.out.println(num);
-//        }
+//        Arrays.sort(arr, Collections.reverseOrder());
 //
-//        int pick = 2;
-//        result = new int[pick];
+//        System.out.println("Sorted arr[] : " + Arrays.toString(arr));
+
+        int n = 23;
+        String n_ = String.valueOf(n);
+        System.out.println(n_);
+
+        for(int i=0;i<n_.length();i++) {
+            int num = n_.charAt(i)-'0';
+            System.out.println(num);
+        }
+
+        int pick = 2;
+        result = new int[pick];
 
         //조합
         // 순서에 상관 없음 예) 123과 321은 동일 취급
-        //comb(0, 0, pick);
+        comb(0, 0, pick);
 
         //순열
         // 순서에 상관 있음 예) 123과 321은 다르게 취급
-        //permutation(0, 2);
+        permutation(0, 2);
 
     }
 
